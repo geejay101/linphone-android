@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
   <!--Custom-->
-  <string name="app_name">Linphone</string>
-  <string name="service_name">Linphone Palvelin</string>
-  <string name="addressbook_label">Linphone</string>
-  <string name="notification_title">Linphone</string>
+  <string name="app_name">Telepele</string>
+  <string name="service_name">Telepele Palvelin</string>
+  <string name="addressbook_label">Telepele</string>
+  <string name="notification_title">Telepele</string>
   <string name="wait_dialog_text">Käynnistetään</string>
   <string name="notification_registered">Rekisteröity kohteeseen %s</string>
   <string name="notification_register_failure">Epäonnistui rekisteröidä kohteeseen %s</string>
@@ -46,7 +46,7 @@
   <string name="assistant_continue">Jatka</string>
   <string name="assistant_remote_provisioning_desc">Anna puhelun yhteyden luomistietojen url-osoite</string>
   <string name="transport">Siirrä</string>
-  <string name="assistant_login_linphone">Käytä Linphone tiliä</string>
+  <string name="assistant_login_linphone">Käytä Telepele tiliä</string>
   <string name="assistant_login_generic">Käytä SIP tiliä</string>
   <string name="assistant_remote_provisioning">Hae etäsäädöt</string>
   <string name="assistant_display_name_optional">Näyttö nimi (vainnainen)</string>
@@ -282,7 +282,7 @@
   <string name="content_description_new_discussion">Uusi keskustelu</string>
   <string name="content_description_search">Hae</string>
   <string name="content_description_all_contacts">Kaikki yhteystiedot</string>
-  <string name="content_description_linphone_contacts">Linphone yhteystiedot</string>
+  <string name="content_description_linphone_contacts">Telepele yhteystiedot</string>
   <string name="content_description_call_direction">Saapuva vai lähtevä puhelu</string>
   <string name="content_description_all_calls">Kaikki puhelut</string>
   <string name="content_description_missed_calls">Vastaamattomat puhelut</string>

@@ -61,12 +61,6 @@
 		android:layout_below="@id/address_bar"
 		android:layout_centerInParent="true"/>
 
-	<ImageView
-		android:src="@drawable/dialer_background"
-		android:layout_centerHorizontal="true"
-		android:layout_width="100dp"
-		android:layout_height="wrap_content"/>
-
     <LinearLayout
         android:id="@+id/controls"
         android:layout_alignParentBottom="true"

@@ -19,6 +19,14 @@ rls_uri=
 use_cpim=1
 linphone_specs=groupchat
 
+# new stuff sip section
+#sip_port=-1
+#sip_tcp_port=-1
+#sip_tls_port=-1
+#default_proxy=0
+#composing_idle_timeout=1
+
+
 [rtp]
 audio_rtp_port=7076
 video_rtp_port=9078
@@ -44,19 +52,22 @@ aggregate_imdn=1
 version_check_url_root=https://www.linphone.org/releases
 
 [app]
-activation_code_length=4
+activation_code_length=5
 prefer_basic_chat_room=1
 
 [in-app-purchase]
-server_url=https://subscribe.linphone.org:444/inapp.php
-purchasable_items_ids=test_account_subscription
+#server_url=https://subscribe.linphone.org:444/inapp.php
+#purchasable_items_ids=test_account_subscription
+
 
 [assistant]
-domain=sip.linphone.org
+#domain=sip.linphone.org
+domain=siptele.x164.com
 password_max_length=-1
 password_min_length=1
 username_length=-1
 username_max_length=64
 username_min_length=1
 username_regex=^[a-z0-9_.\-]*$
-xmlrpc_url=https://subscribe.linphone.org:444/wizard.php
+#xmlrpc_url=http://subscribe.linphone.org/wizard.php
+xmlrpc_url=http://subscribe.x164.com/tele/api/wizard.php

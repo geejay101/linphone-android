@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
   <!--Custom-->
-  <string name="app_name">Linphone</string>
-  <string name="service_name">Linphone Service</string>
-  <string name="addressbook_label">Linphone</string>
-  <string name="notification_title">Linphone</string>
+  <string name="app_name">Telepele</string>
+  <string name="service_name">Telepele Service</string>
+  <string name="addressbook_label">Telepele</string>
+  <string name="notification_title">Telepele</string>
   <string name="wait_dialog_text">Iniciando</string>
   <string name="tunnel_host"></string>
   <string name="sync_account_name">contactos linphone</string>
@@ -193,7 +193,7 @@
   <string name="content_description_add">Añadir llamada</string>
   <string name="content_description_search">Buscar</string>
   <string name="content_description_all_contacts">Todos los contactos</string>
-  <string name="content_description_linphone_contacts">Contactos de Linphone</string>
+  <string name="content_description_linphone_contacts">Contactos de Telepele</string>
   <string name="content_description_all_calls">Todas las llamadas</string>
   <string name="content_description_missed_calls">Llamadas perdidas</string>
   <string name="content_description_switch_video">Conmutar vídeo</string>

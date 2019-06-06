@@ -27,8 +27,6 @@ configurations {
 }
 
 
-
-
 apply plugin: 'com.android.library'
 
 
@@ -64,7 +62,6 @@ excludePackage.add('**/**tester**')
 excludePackage.add('**/LICENSE.txt')
 
 android {
-
 
     buildTypes {
         release {}

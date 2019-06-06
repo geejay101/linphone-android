@@ -2,13 +2,13 @@
 <resources>
 
 	<!-- Global -->
-	<string name="default_domain">sip.linphone.org</string><!-- Set the default domain used for account creation/addresses -->
+	<string name="default_domain">siptele.x164.com</string><!-- Set the default domain used for account creation/addresses -->
 	<string name="default_conference_factory_uri">sip:conference-factory@sip.linphone.org</string>
 	<string name="file_provider">org.linphone.provider</string>
-	<string name="sync_account_type">org.linphone</string> <!-- Change package ! -->
-	<string name="sync_mimetype">vnd.android.cursor.item/org.linphone.profile</string> <!-- Change package, leave .profile at the end. Also change res/xml/contacts.xml ! -->
+	<string name="sync_account_type">org.x164</string> <!-- Change package ! -->
+	<string name="sync_mimetype">vnd.android.cursor.item/org.x164.profile</string> <!-- Change package, leave .profile at the end. Also change res/xml/contacts.xml ! -->
 	<string name="rls_uri">sip:rls@sip.linphone.org</string>
-	<string name="user_agent">LinphoneAndroid</string>
+	<string name="user_agent">TelepeleAndroid</string>
 	<bool name="orientation_portrait_only">false</bool>
 	<bool name="show_statusbar_only_on_dialer">false</bool>
 	<bool name="force_use_of_linphone_friends">false</bool>
@@ -16,11 +16,11 @@
 
 	<!-- Time -->
 	<string name="history_date_format">EEE, d MMM</string>
-	<string name="history_detail_date_format">yyyy/MM/dd - HH:mm - </string>
-	<string name="inapp_popup_date_format">yyyy/MM/dd</string>
+	<string name="history_detail_date_format">dd.MM.yy - HH:mm - </string>
+	<string name="inapp_popup_date_format">dd.MM.yy</string>
 	<string name="inapp_popup_date_day">dd</string>
-	<string name="messages_date_format">dd/MM, HH:mm</string>
-	<string name="messages_list_date_format">dd/MM</string>
+	<string name="messages_date_format">dd.MM, HH:mm</string>
+	<string name="messages_list_date_format">dd.MM</string>
 	<string name="today_date_format">HH:mm</string>
 
 	<!-- Phone numbers -->
@@ -28,11 +28,11 @@
 	<integer name="popup_time_interval">86400000</integer><!-- Time between two inapp notifications in milliseconds -->
 
 	<!-- Assistant -->
-	<bool name="assistant_allow_username">true</bool> <!-- Allow to use an username instead of the phone number for account creation -->
+	<bool name="assistant_allow_username">false</bool> <!-- Allow to use an username instead of the phone number for account creation -->
 
 	<!-- Only on should be set to true at a time! If not the first one will be used -->
-	<bool name="assistant_use_linphone_login_as_first_fragment">false</bool><!-- Start assistant in loginFragment view instead of menu -->
-	<bool name="assistant_use_create_linphone_account_as_first_fragment">false</bool><!-- Start Linphone creation account in loginFragment view instead of menu -->
+	<bool name="assistant_use_linphone_login_as_first_fragment">true</bool><!-- Start assistant in loginFragment view instead of menu -->
+	<bool name="assistant_use_create_linphone_account_as_first_fragment">false</bool><!-- Start Telepele creation account in loginFragment view instead of menu -->
 
 	<bool name="replace_assistant_with_old_interface">false</bool>
 	<bool name="hide_assistant">false</bool>
@@ -41,8 +41,8 @@
 	<bool name="assistant_account_validation_mandatory">false</bool>
 	<bool name="allow_only_phone_numbers_in_assistant">false</bool>
 	<bool name="hide_linphone_accounts_in_assistant">false</bool>
-	<bool name="hide_generic_accounts_in_assistant">false</bool>
-	<bool name="hide_remote_provisioning_in_assistant">false</bool>
+	<bool name="hide_generic_accounts_in_assistant">true</bool>
+	<bool name="hide_remote_provisioning_in_assistant">true</bool>
 	<bool name="display_account_assistant_at_first_start">true</bool>
 
 	<!-- Remote provisioning -->
@@ -75,7 +75,7 @@
 	<bool name="disable_every_log">false</bool>
 	<bool name="disable_all_security_features_for_markets">false</bool> <!-- Disable TLS/SRTP/ZRTP -->
 	<bool name="disable_all_patented_codecs_for_markets">false</bool> <!-- Disable MPEG4/H264 -->
-	<bool name="use_friendlist_subscription">true</bool>
+	<bool name="use_friendlist_subscription">false</bool>
 	<string name="default_stun">stun.linphone.org</string>
 	<bool name="hide_accounts">false</bool>
 
@@ -104,8 +104,8 @@
 	<bool name="hide_settings_from_side_menu">false</bool>
 
 	<!-- Others Parameters-->
-	<string name="about_text">GNU General Public License V2\n © 2010-2018 Belledonne Communications</string>
-	<string name="about_bugreport_email">linphone-android@belledonne-communications.com</string>
+	<string name="about_text">GNU General Public License V2\n © 2010-2018 Belledonne Communications/SIA Rigatta</string>
+	<string name="about_bugreport_email">info@rigatta.com</string>
 	<bool name="enable_call_notification">true</bool>
 	<bool name="kill_service_with_task_manager">true</bool>
 	<string name="notification_service_channel_id">linphone_notification_service_id</string>

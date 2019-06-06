@@ -184,14 +184,6 @@
 
 			</LinearLayout>
 
-			<CheckBox
-				android:id="@+id/use_username"
-				android:visibility="visible"
-				android:layout_marginTop="20dp"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:text="@string/login_with_username"/>
-
 			<Button
 				android:id="@+id/assistant_apply"
 				android:text="@string/assistant_login"
