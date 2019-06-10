@@ -10,9 +10,51 @@ Group changes to describe their impact on the project, as follows:
     Fixed for any bug fixes.
     Security to invite users to upgrade in case of vulnerabilities.
 
-## [Incomming]
-- feature: support of H265 codec.
-- feature: use TextureView instead of GL2JNIView, easier to use and will fix issues
+## [Unreleased]
+
+### Added
+- Added shortcuts to calls history & chat rooms list
+- Improved device's do not disturb policy compliance
+- Added sample application to help developpers getting started with our SDK
+- Added picture in picture feature if supported instead of video overlay
+- Added camera preview as dialer's background on tablets
+
+## [4.1.0] - 2019-05-03
+
+### Added
+- End-to-end encryption for instant messaging, for both one-to-one and group conversations.
+- Video H.265 codec support, based on android MediaCodec.
+- Enhanced call and IM notifications, so that it is possible to answer, decline, reply or mark as read directly from them.
+- Setting to request attachments to be automatically downloaded, unconditionnally or based on their size.
+- Possibility to send multiple attachments (images, documents) in a same message.
+- Possibility to share multiple images through Linphone from an external application (ex: photo app)
+- Rich input from keyboard (images, animated gifs...) when composing messages.
+- Rendering of animated gifs in conversations.
+- Button to invite contacts to use Linphone by sending them a SMS.
+- Possibility to record calls (audio only), and replay them from the "Recordings" menu.
+- Remote provisioning from a QR code providing the http(s) url of a provisioning server.
+- Option for a dark theme
+
+### Changed
+- Compilation procedure is simplified: a binary SDK containing dependencies (liblinphone) is retrieved automatically from a Maven repository.
+  Full compilation remains absolutely supported. Please check local README.md for more details.
+- Updated translations, mainly French and English.
+- Call history view shows last calls for a given contact.
+- Improved ergonomy of answer/decline buttons, including accessibility support.
+- Enhanced user interface, including new icons, cleanups of unused graphical resources.
+- Contact view is faster thanks to an asynchronous fetching.
+- Adaptive icon for Android 8+.
+- Video overlay now also shows local view.
+- Reworked settings view, cleanup of useless settings.
+- About section links to full GPLv2 license text.
+
+### Deprecated
+- The video rendering method based on GL2JNIView is deprecated in favour of TextureView, which is easier to use.
+  Please read [this article](https://wiki.linphone.org/xwiki/wiki/public/view/Lib/Features/Android%20TextureView%20Display/) for more information.
+
+### Fixed
+- One to one text conversations mixed up when initiated from differents SIP accounts. 
+
 
 ## [4.0.1] - 2018-06-26
 
@@ -33,7 +75,6 @@ Group changes to describe their impact on the project, as follows:
 
 ### Fixed
 - issue with changing push notification token not passed to library, possibly resulting in a loss of incoming calls.
-
 
 ## [3.3.0] - 2017-10-18
 
