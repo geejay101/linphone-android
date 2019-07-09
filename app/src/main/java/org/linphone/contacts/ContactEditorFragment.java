@@ -88,9 +88,11 @@ public class ContactEditorFragment extends Fragment {
             mContact = (LinphoneContact) getArguments().getSerializable("Contact");
             if (getArguments().containsKey("SipUri")) {
                 mNewSipOrNumberToAdd = getArguments().getString("SipUri");
+                Log.i("[Contacts] SipUri in onCreateView: " + mNewSipOrNumberToAdd);
             }
             if (getArguments().containsKey("DisplayName")) {
                 mNewDisplayName = getArguments().getString("DisplayName");
+                Log.i("[Contacts] DisplayName in onCreateView: " + mNewDisplayName);
             }
         } else if (savedInstanceState != null) {
             mContact = (LinphoneContact) savedInstanceState.get("Contact");
@@ -523,6 +525,12 @@ public class ContactEditorFragment extends Fragment {
                             || !LinphoneUtils.isNumberAddress(mNewSipOrNumberToAdd);
             if (!isSip) {
                 View view = displayNumberOrAddress(controls, mNewSipOrNumberToAdd, false);
+                if (view != null) controls.addView(view);
+            } else {
+                // make a phone number from the URI
+                String displayedNumber =
+                        LinphoneUtils.getDisplayablePhonenumberFromAddress(mNewSipOrNumberToAdd);
+                View view = displayNumberOrAddress(controls, displayedNumber, false);
                 if (view != null) controls.addView(view);
             }
         }

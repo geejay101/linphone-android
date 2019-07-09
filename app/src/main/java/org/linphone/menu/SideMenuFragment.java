@@ -48,7 +48,6 @@ import org.linphone.core.tools.Log;
 import org.linphone.recording.RecordingsActivity;
 import org.linphone.settings.LinphonePreferences;
 import org.linphone.settings.SettingsActivity;
-import org.linphone.utils.LinphoneUtils;
 
 public class SideMenuFragment extends Fragment {
     private DrawerLayout mSideMenu;
@@ -189,8 +188,10 @@ public class SideMenuFragment extends Fragment {
             address.setText("");
             mDefaultAccount.setOnClickListener(null);
         } else {
-            address.setText(proxy.getIdentityAddress().asStringUriOnly());
-            displayName.setText(LinphoneUtils.getAddressDisplayName(proxy.getIdentityAddress()));
+            // Diabled to hide account
+            // address.setText(proxy.getIdentityAddress().asStringUriOnly());
+            // displayName.setText(LinphoneUtils.getAddressDisplayName(proxy.getIdentityAddress()));
+            displayName.setText(getString(R.string.account_ready));
             status.setImageResource(getStatusIconResource(proxy.getState()));
             status.setVisibility(View.VISIBLE);
 

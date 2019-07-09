@@ -164,7 +164,8 @@ public class CallIncomingActivity extends LinphoneGenericActivity {
             ContactAvatar.displayAvatar(displayName, findViewById(R.id.avatar_layout), true);
             mName.setText(displayName);
         }
-        mNumber.setText(address.asStringUriOnly());
+        // disabled to hide URI
+        // mNumber.setText(address.asStringUriOnly());
 
         if (LinphonePreferences.instance().acceptIncomingEarlyMedia()) {
             if (mCall.getCurrentParams().videoEnabled()) {

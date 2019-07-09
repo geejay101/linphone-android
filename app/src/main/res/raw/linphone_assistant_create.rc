@@ -5,8 +5,8 @@
     <entry name="dial_escape_plus" overwrite="true">0</entry>
     <entry name="quality_reporting_enabled" overwrite="true">0</entry>
     <entry name="reg_identity" overwrite="true">sip:?@siptele.x164.com</entry>
-    <entry name="reg_proxy" overwrite="true">&lt;sip:siptele.x164.com:5069;transport=udp&gt;</entry>
-    <entry name="reg_route" overwrite="true">&lt;sip:siptele.x164.com:5069;transport=udp&gt;</entry>
+    <entry name="reg_proxy" overwrite="true">&lt;sip:sipproxy.x164.com:5877;transport=udp&gt;</entry>
+    <entry name="reg_route" overwrite="true">&lt;sip:sipproxy.x164.com:5877;transport=udp&gt;</entry>
     <entry name="publish" overwrite="true">0</entry>
     <entry name="quality_reporting_collector" overwrite="true">sip:voip-metrics@sip.linphone.org;transport=tls</entry>
     <entry name="quality_reporting_interval" overwrite="true">180</entry>

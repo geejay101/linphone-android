@@ -45,8 +45,6 @@
   <string name="today">Данас</string>
   <string name="yesterday">Јуче</string>
   <!--Contacts-->
-  <string name="no_contact">Нема контакта у вашем адресару.</string>
-  <string name="no_sip_contact">Нема СИП контакта у вашем адресару.</string>
   <string name="sip_address">СИП адреса</string>
   <string name="contact_first_name">Име</string>
   <string name="contact_last_name">Презиме</string>

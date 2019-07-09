@@ -185,7 +185,7 @@ public class CallOutgoingActivity extends LinphoneGenericActivity implements OnC
             ContactAvatar.displayAvatar(displayName, findViewById(R.id.avatar_layout), true);
             mName.setText(displayName);
         }
-        mNumber.setText(LinphoneUtils.getDisplayableAddress(address));
+        // mNumber.setText(LinphoneUtils.getDisplayableAddress(address));
     }
 
     @Override

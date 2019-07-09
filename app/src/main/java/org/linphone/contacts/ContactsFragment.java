@@ -96,9 +96,9 @@ public class ContactsFragment extends Fragment
                     public void onClick(View v) {
                         mOnlyDisplayLinphoneContacts = false;
                         mAllContactsSelected.setVisibility(View.VISIBLE);
+                        mLinphoneContactsSelected.setVisibility(View.INVISIBLE);
                         mAllContacts.setEnabled(false);
                         mLinphoneContacts.setEnabled(true);
-                        mLinphoneContactsSelected.setVisibility(View.INVISIBLE);
                         changeContactsAdapter();
                     }
                 });
@@ -107,11 +107,11 @@ public class ContactsFragment extends Fragment
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        mOnlyDisplayLinphoneContacts = true;
                         mAllContactsSelected.setVisibility(View.INVISIBLE);
                         mLinphoneContactsSelected.setVisibility(View.VISIBLE);
-                        mLinphoneContacts.setEnabled(false);
                         mAllContacts.setEnabled(true);
-                        mOnlyDisplayLinphoneContacts = true;
+                        mLinphoneContacts.setEnabled(false);
                         changeContactsAdapter();
                     }
                 });
@@ -133,6 +133,7 @@ public class ContactsFragment extends Fragment
             mLinphoneContacts.setVisibility(View.INVISIBLE);
             mLinphoneContactsSelected.setVisibility(View.INVISIBLE);
         } else {
+            mOnlyDisplayLinphoneContacts = false;
             mAllContacts.setEnabled(mOnlyDisplayLinphoneContacts);
             mLinphoneContacts.setEnabled(!mAllContacts.isEnabled());
         }

@@ -163,8 +163,7 @@ Vos amis pourront vous joindre plus facilement si vous associez votre compte à 
   <string name="yesterday">Hier</string>
   <string name="calls">Appels</string>
   <!--Contacts-->
-  <string name="no_contact">Aucun contact dans votre carnet d\'adresse.</string>
-  <string name="no_sip_contact">Aucun contact SIP dans votre carnet d\'adresse.</string>
+ 
   <string name="delete_contacts">Voulez-vous supprimer les contacts sélectionnés ?</string>
   <string name="delete_contact">Voulez-vous supprimer le contact sélectionné ?</string>
   <string name="sip_address">Adresse SIP</string>

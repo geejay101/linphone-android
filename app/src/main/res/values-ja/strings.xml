@@ -138,8 +138,7 @@
   <string name="today">今日</string>
   <string name="yesterday">昨日</string>
   <!--Contacts-->
-  <string name="no_contact">電話帳に連絡先がありません</string>
-  <string name="no_sip_contact">電話帳にSIPの連絡先がありません</string>
+ 
   <string name="delete_contacts">本当に選択した連絡先を削除しますか？</string>
   <string name="delete_contact">本当に選択した連絡先を削除しますか？</string>
   <string name="sip_address">SIPアドレス</string>

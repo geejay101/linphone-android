@@ -153,8 +153,7 @@
   <string name="today">今天</string>
   <string name="yesterday">昨天</string>
   <!--Contacts-->
-  <string name="no_contact">通訊錄中沒有連絡人。</string>
-  <string name="no_sip_contact">通訊錄中沒有 SIP 連絡人。</string>
+ 
   <string name="delete_contacts">你想要刪除選取的聯絡人嗎？</string>
   <string name="delete_contact">你想要刪除選取的聯絡人嗎？</string>
   <string name="sip_address">SIP 位址</string>

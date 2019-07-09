@@ -135,8 +135,7 @@
   <string name="today">今天</string>
   <string name="yesterday">昨天</string>
   <!--Contacts-->
-  <string name="no_contact">无联系人</string>
-  <string name="no_sip_contact">无SIP联系人</string>
+ 
   <string name="delete_contacts">您想删除所选联系人吗？</string>
   <string name="delete_contact">您想删除所选联系人吗？</string>
   <string name="sip_address">SIP地址</string>

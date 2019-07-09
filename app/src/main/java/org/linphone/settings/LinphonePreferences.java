@@ -315,7 +315,8 @@ public class LinphonePreferences {
     }
 
     public float getMicGainDb() {
-        return getLc().getMicGainDb();
+        // return getLc().getMicGainDb();
+        return getConfig().getInt("sound", "mic_gain_db", 0);
     }
 
     public void setMicGainDb(float gain) {
@@ -323,7 +324,8 @@ public class LinphonePreferences {
     }
 
     public float getPlaybackGainDb() {
-        return getLc().getPlaybackGainDb();
+        // return getLc().getPlaybackGainDb();
+        return getConfig().getInt("sound", "play_gain_db", 0);
     }
 
     public void setPlaybackGainDb(float gain) {
@@ -658,36 +660,37 @@ public class LinphonePreferences {
             if (regId != null && core.getProxyConfigList().length > 0) {
                 for (ProxyConfig lpc : core.getProxyConfigList()) {
                     if (lpc == null) continue;
-                    if (!lpc.isPushNotificationAllowed()) {
+                    // if (!lpc.isPushNotificationAllowed()) {
+                    //    lpc.edit();
+                    //    lpc.setContactUriParameters(null);
+                    //    lpc.done();
+                    //    if (lpc.getIdentityAddress() != null)
+                    //        Log.d(
+                    //                "[Push Notification] infos removed from proxy config "
+                    //                        + lpc.getIdentityAddress().asStringUriOnly());
+                    // } else {
+                    String contactInfos =
+                            "app-id="
+                                    + appId
+                                    //                                        + ";pn-type="
+                                    //                                        +
+                                    // getString(R.string.push_type)
+                                    //                                        + ";pn-timeout=0"
+                                    + ";pn-tok="
+                                    + regId;
+                    //                                        + ";pn-silent=1";
+                    String prevContactParams = lpc.getContactParameters();
+                    if (prevContactParams == null
+                            || prevContactParams.compareTo(contactInfos) != 0) {
                         lpc.edit();
-                        lpc.setContactUriParameters(null);
+                        lpc.setContactUriParameters(contactInfos);
                         lpc.done();
                         if (lpc.getIdentityAddress() != null)
                             Log.d(
-                                    "[Push Notification] infos removed from proxy config "
+                                    "[Push Notification] infos added to proxy config "
                                             + lpc.getIdentityAddress().asStringUriOnly());
-                    } else {
-                        String contactInfos =
-                                "app-id="
-                                        + appId
-                                        + ";pn-type="
-                                        + getString(R.string.push_type)
-                                        + ";pn-timeout=0"
-                                        + ";pn-tok="
-                                        + regId
-                                        + ";pn-silent=1";
-                        String prevContactParams = lpc.getContactParameters();
-                        if (prevContactParams == null
-                                || prevContactParams.compareTo(contactInfos) != 0) {
-                            lpc.edit();
-                            lpc.setContactUriParameters(contactInfos);
-                            lpc.done();
-                            if (lpc.getIdentityAddress() != null)
-                                Log.d(
-                                        "[Push Notification] infos added to proxy config "
-                                                + lpc.getIdentityAddress().asStringUriOnly());
-                        }
                     }
+                    // }
                 }
                 Log.i(
                         "[Push Notification] Refreshing registers to ensure token is up to date: "

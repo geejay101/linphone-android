@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 static def getPackageName() {
-    return "org.linphone"
+    return "eu.telepele"
 }
 
 static def firebaseEnabled() {

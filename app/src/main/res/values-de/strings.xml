@@ -156,8 +156,7 @@
   <string name="today">Heute</string>
   <string name="yesterday">Gestern</string>
   <!--Contacts-->
-  <string name="no_contact">Kein Kontakt in Ihrem Adressbuch.</string>
-  <string name="no_sip_contact">Kein SIP-Kontakt in Ihrem Adressbuch.</string>
+ 
   <string name="delete_contacts">Möchten Sie die ausgewählten Kontakte löschen?</string>
   <string name="delete_contact">Möchten Sie den ausgewählten Kontakt löschen?</string>
   <string name="sip_address">SIP-Adresse</string>
@@ -221,9 +220,9 @@
   <string name="unexpected_event">Unerwartetes Ereignis %i für %s</string>
   <string name="download_file">Herunterladen</string>
   <!--Status Bar-->
-  <string name="status_connected">Verbunden</string>
-  <string name="status_not_connected">Nicht verbunden</string>
-  <string name="status_error">Verbindung fehlgeschlagen</string>
+  <string name="status_connected">Online</string>
+  <string name="status_not_connected">Offline</string>
+  <string name="status_error">Registrierung fehlgeschlagen</string>
   <string name="voicemail_unread">ungelesene Nachrichten</string>
   <!--Side Menu-->
   <string name="menu_logout">Abmelden</string>

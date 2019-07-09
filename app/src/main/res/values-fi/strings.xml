@@ -76,8 +76,7 @@
   <string name="today">Tänään</string>
   <string name="yesterday">Eilen</string>
   <!--Contacts-->
-  <string name="no_contact">Osoitekirjassasi ei ole yhteystietoja.</string>
-  <string name="no_sip_contact">Osoitekirjassasi ei ole SIP yhteystietoja.</string>
+
   <string name="delete_contacts">Haluatko poistaa valitun yhteystiedon?</string>
   <string name="delete_contact">Haluatko poistaa valitun yhteystiedon?</string>
   <string name="sip_address">SIP osoite</string>

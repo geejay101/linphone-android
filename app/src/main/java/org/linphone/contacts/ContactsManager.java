@@ -243,19 +243,23 @@ public class ContactsManager extends ContentObserver implements FriendListListen
     }
 
     public boolean isLinphoneContactsPrefered() {
-        ProxyConfig lpc = LinphoneManager.getCore().getDefaultProxyConfig();
-        return lpc != null
-                && lpc.getIdentityAddress()
-                        .getDomain()
-                        .equals(mContext.getString(R.string.default_domain));
+        //   ProxyConfig lpc = LinphoneManager.getCore().getDefaultProxyConfig();
+        //   return lpc != null
+        //           && lpc.getIdentityAddress()
+        //                   .getDomain()
+        //                   .equals(mContext.getString(R.string.default_domain));
+        return false;
     }
 
     public void initializeContactManager() {
+        Log.i("[Contacts Manager] Starting initializeContactManager");
         if (!mInitialized) {
             if (mContext.getResources().getBoolean(R.bool.use_linphone_tag)) {
+                Log.i("[Contacts Manager] Checking Contacts Read access");
                 if (hasReadContactsAccess()
                         && hasWriteContactsAccess()
                         && hasWriteSyncPermission()) {
+                    Log.i("[Contacts Manager] checking LinphoneService.isReady");
                     if (LinphoneService.isReady()) {
                         initializeSyncAccount();
                         mInitialized = true;
@@ -298,6 +302,8 @@ public class ContactsManager extends ContentObserver implements FriendListListen
     private void initializeSyncAccount() {
         AccountManager accountManager =
                 (AccountManager) mContext.getSystemService(Context.ACCOUNT_SERVICE);
+
+        Log.i("[Contacts Manager] initializeSyncAccount Trying to get Contact account");
 
         Account[] accounts =
                 accountManager.getAccountsByType(mContext.getString(R.string.sync_account_type));

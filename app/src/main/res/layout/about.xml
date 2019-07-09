@@ -12,7 +12,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:background="?attr/backgroundContastColor"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="20dp">
@@ -24,14 +23,6 @@
                 android:src="@drawable/splashscreen" />
 
             <TextView
-                android:textSize="13sp"
-                android:textColor="?accentColor"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/app_description" />
-
-            <TextView
                 android:id="@+id/about_android_version"
                 style="@style/about_version_font"
                 android:layout_width="wrap_content"
@@ -39,8 +30,8 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:paddingTop="20dp"
-                android:textColorLink="?attr/secondaryTextColor"
-                android:text="@string/about_version" />
+                android:text="@string/about_version"
+                android:textColorLink="?attr/secondaryTextColor" />
 
             <TextView
                 android:id="@+id/about_liblinphone_sdk_version"
@@ -49,8 +40,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:textColorLink="?attr/secondaryTextColor"
-                android:text="@string/about_liblinphone_sdk_version" />
+                android:text="@string/about_liblinphone_sdk_version"
+                android:textColorLink="?attr/secondaryTextColor" />
 
         </LinearLayout>
 

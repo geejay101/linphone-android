@@ -141,8 +141,6 @@
   <string name="today">Bugün</string>
   <string name="yesterday">Dün</string>
   <!--Contacts-->
-  <string name="no_contact">Adres defterinizde kimse yok</string>
-  <string name="no_sip_contact">Adres defterinizde SIP bağlantısı yok</string>
   <string name="delete_contacts">Seçilen bağlantıları silmek ister misiniz?</string>
   <string name="delete_contact">Seçilen bağlantıyı silmek ister misiniz?</string>
   <string name="sip_address">SIP adresi</string>

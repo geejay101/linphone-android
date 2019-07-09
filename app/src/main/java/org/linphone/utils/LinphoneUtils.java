@@ -268,6 +268,23 @@ public final class LinphoneUtils {
         return username;
     }
 
+    public static String getDisplayablePhonenumberFromAddress(String sipAddress) {
+        String username = sipAddress;
+
+        if (username.startsWith("sip:")) {
+            username = username.substring(4);
+        }
+
+        if (username.contains("@")) {
+            return username.split("@")[0];
+        }
+        if (!username.startsWith("+")) {
+            username = "+" + username;
+        }
+
+        return username;
+    }
+
     public static String getFullAddressFromUsername(String username) {
         String sipAddress = username;
         Core core = LinphoneManager.getCore();

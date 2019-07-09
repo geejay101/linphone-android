@@ -115,10 +115,14 @@ public abstract class AssistantActivity extends LinphoneGenericActivity
 
         if (useLinphoneDefaultValues) {
             // Restore default values
+            Log.e("[Assistant] loaded default push methods");
+
             core.loadConfigFromXml(LinphonePreferences.instance().getDefaultDynamicConfigFile());
         } else {
             // If this isn't a sip.linphone.org account, disable push notifications and enable
             // service notification, otherwise incoming calls won't work (most probably)
+            Log.e("[Assistant] disabled push and enabled service notification");
+
             LinphonePreferences.instance().setServiceNotificationVisibility(true);
             LinphoneService.instance().getNotificationManager().startForeground();
         }
@@ -133,7 +137,9 @@ public abstract class AssistantActivity extends LinphoneGenericActivity
                     proxyConfig.setDialPrefix(dialPlan.getCountryCallingCode());
                 }
             }
-
+            LinphonePreferences.instance()
+                    .setPushNotificationEnabled(
+                            LinphonePreferences.instance().isPushNotificationEnabled());
             LinphonePreferences.instance().firstLaunchSuccessful();
             goToLinphoneActivity();
         }

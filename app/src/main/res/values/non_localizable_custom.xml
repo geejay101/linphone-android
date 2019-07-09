@@ -5,9 +5,13 @@
     <!-- Set the default domain used for account creation/addresses -->
     <string name="default_domain" translatable="false">siptele.x164.com</string>
     <string name="default_stun" translatable="false">stun.linphone.org</string>
-    <string name="default_conference_factory_uri" translatable="false">sip:conference-factory@sip.linphone.org</string>
+<!--    <string name="default_conference_factory_uri" translatable="false">sip:conference-factory@sip.linphone.org</string>
     <string name="default_lime_x3dh_server_url" translatable="false">https://lime.linphone.org/lime-server/lime-server.php</string>
-    <string name="rls_uri" translatable="false">sip:rls@sip.linphone.org</string>
+-->
+
+    <string name="default_conference_factory_uri" translatable="false"></string>
+    <string name="default_lime_x3dh_server_url" translatable="false"></string>
+    <string name="rls_uri" translatable="false"></string>
     <string name="download_link" translatable="false">https://linphone.org/download</string>
     <string name="recover_password_link" translatable="false">https://linphone.org/freesip/recover</string>
     <string name="about_privacy_policy_link" translatable="false">https://telepele.eu/terms-and-privacy</string>
@@ -25,7 +29,9 @@
     <!-- Push notification settings -->
     <bool name="enable_push_id">true</bool>
     <string name="push_type" translatable="false">firebase</string>
-
+<!--
+    <string name="push_sender_id">753726321023</string>
+-->
     <!-- UI config -->
     <bool name="orientation_portrait_only">true</bool>
     <bool name="force_use_of_linphone_friends">false</bool>
@@ -47,7 +53,7 @@
     <bool name="use_phone_number_validation">true</bool><!-- Use phone number for validation -->
     <!-- Time between two link your account with phone number dialog in milliseconds -->
     <integer name="phone_number_linking_popup_time_interval">86400000</integer>
-    <integer name="phone_number_validation_code_length">4</integer>
+    <integer name="phone_number_validation_code_length">5</integer>
 
     <!-- Assistant -->
     <!-- Only on should be set to true at a time! If not the first one will be used -->
@@ -64,16 +70,19 @@
     <bool name="hide_remote_provisioning_in_assistant">true</bool>
     <!-- Set the email field of the wizard with one of the gmail account registered on the device -->
     <bool name="pre_fill_email_in_assistant">true</bool>
+
+    <!-- setting not working-->
     <bool name="assistant_account_validation_mandatory">false</bool>
-    <bool name="display_account_assistant_at_first_start">false</bool>
+
+    <bool name="display_account_assistant_at_first_start">true</bool>
     <bool name="forbid_to_leave_assistant_before_account_configuration">true</bool>
 
     <!-- Call -->
     <bool name="forbid_self_call">false</bool>
     <bool name="allow_ringing_while_early_media">false</bool>
-    <bool name="allow_transfers">true</bool>
-    <bool name="disable_options_in_call">false</bool>
-    <bool name="hide_in_call_stats">false</bool>
+    <bool name="allow_transfers">false</bool>
+    <bool name="disable_options_in_call">true</bool>
+    <bool name="hide_in_call_stats">true</bool>
     <bool name="do_not_use_sliders_to_answer_hangup_call_if_phone_unlocked">true</bool>
     <bool name="allow_pip_while_video_call">true</bool>
 
@@ -84,8 +93,8 @@
 
     <!-- Chat -->
     <bool name="disable_chat">true</bool>
-    <bool name="disable_chat_message_notification">false</bool>
-    <bool name="disable_chat_send_file">false</bool>
+    <bool name="disable_chat_message_notification">true</bool>
+    <bool name="disable_chat_send_file">true</bool>
     <bool name="lower_space_between_chat_bubbles_if_same_person">true</bool>
     <bool name="allow_multiple_images_and_text">true</bool>
     <bool name="send_text_and_images_as_different_messages">false</bool>
@@ -98,25 +107,26 @@
 
     <!-- Contacts -->
     <bool name="hide_contact_phone_numbers">false</bool>
-    <bool name="hide_contact_sip_addresses">false</bool>
+    <bool name="hide_contact_sip_addresses">true</bool>
     <bool name="hide_phone_numbers_in_editor">false</bool>
-    <bool name="hide_sip_addresses_in_editor">false</bool>
+    <bool name="hide_sip_addresses_in_editor">true</bool>
     <bool name="allow_only_one_phone_number">false</bool>
     <bool name="allow_only_one_sip_address">false</bool>
     <bool name="display_contact_organization">true</bool>
     <bool name="hide_numbers_and_addresses_without_presence">false</bool>
     <bool name="hide_sip_contacts_without_presence">false</bool>
     <bool name="hide_non_linphone_contacts">false</bool>
-    <bool name="use_native_contact_editor">false</bool>
+
+    <bool name="use_native_contact_editor">true</bool>
     <bool name="hide_invite_contact">false</bool>
     <bool name="generate_text_avatar">true</bool>
     <bool name="only_show_address_username_if_matches_default_domain">true</bool>
 
     <!-- Side Menu -->
-    <bool name="hide_assistant_from_side_menu">false</bool>
-    <bool name="hide_settings_from_side_menu">false</bool>
-    <bool name="hide_recordings_from_side_menu">false</bool>
-    <bool name="disable_accounts_settings_from_side_menu">false</bool>
+    <bool name="hide_assistant_from_side_menu">true</bool>
+    <bool name="hide_settings_from_side_menu">true</bool>
+    <bool name="hide_recordings_from_side_menu">true</bool>
+    <bool name="disable_accounts_settings_from_side_menu">true</bool>
     <bool name="show_log_out_in_side_menu">false</bool>
 
     <!-- Others Parameters-->

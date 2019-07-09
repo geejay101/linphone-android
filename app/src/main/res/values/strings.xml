@@ -46,6 +46,7 @@
     <string name="about">About</string>
     <string name="deny">Deny</string>
     <string name="no_account">No account configured</string>
+    <string name="account_ready">Ready</string>
     <string name="search">Search</string>
     <string name="outgoing">Outgoing</string>
     <string name="incoming">Incoming</string>
@@ -73,11 +74,11 @@
     <!-- Assistant -->
     <string name="welcome">Welcome</string>
     <string name="assistant">Telepele</string>
-    <string name="assistant_create_account">Register</string>
+    <string name="assistant_create_account">Login Telepele</string>
     <string name="assistant_link_account">Link account</string>
     <string name="assistant_continue">Continue</string>
     <string name="assistant_activate">Activate your account</string>
-    <string name="assistant_finish">Finish configuration</string>
+    <string name="assistant_finish">Activate</string>
     <string name="assistant_validate_account_1">Your account is created. Please check your mails to validate your account:</string>
     <string name="assistant_validate_account_2">Once it is done, come back here and click on the button.</string>
     <string name="assistant_welcome_desc">This assistant will help you configure and use your SIP account.</string>
@@ -90,8 +91,8 @@
     <string name="assistant_login_generic">Use SIP account</string>
     <string name="assistant_remote_provisioning">Fetch remote configuration</string>
     <string name="assistant_create_account_part_1">Please confirm your country code and enter your phone number</string>
-    <string name="assistant_create_account_part_2">We have sent you a SMS with a validation code to your phone number:</string>
-    <string name="assistant_create_account_part_3">To complete your phone number verification, please enter the 5 digit code below:\n</string>
+    <string name="assistant_create_account_part_2">We have sent you a SMS with a validation code:</string>
+    <string name="assistant_create_account_part_3">Please enter the 5 digit verification code:\n</string>
     <string name="assistant_create_account_part_email">Please enter an username, email and password for your Telepele account</string>
     <string name="assistant_display_name_optional">Display name (optional)</string>
     <string name="assistant_linphone_account">Login Telepele</string>
@@ -176,8 +177,8 @@
     <string name="calls">Calls</string>
 
     <!-- Contacts -->
-    <string name="no_contact">No contact in your address book.</string>
-    <string name="no_sip_contact">No SIP contact in your address book.</string>
+    <string name="no_contact"></string>
+    <string name="no_sip_contact"></string>
     <string name="delete_contacts">Do you want to delete selected contacts?</string>
     <string name="delete_contact">Do you want to delete selected contact?</string>
     <string name="sip_address">SIP address</string>
@@ -185,7 +186,7 @@
     <string name="contact_last_name">Last name</string>
     <string name="contact_organization">Organization</string>
     <string name="invite_friend">Invite</string>
-    <string name="invite_friend_text">Hello, join me on Linphone! You can download it for free at %s</string>
+    <string name="invite_friend_text">Hi, try Telepele to call abroad.</string>
     <string name="toast_choose_contact_for_edition">Select a contact or create a new one</string>
 
     <!-- Chat -->
@@ -257,10 +258,10 @@
     <string name="trust_denied">Trust has been denied. Make a call to start the authentication process again.</string>
 
     <!-- Status Bar -->
-    <string name="status_connected">Connected</string>
-    <string name="status_not_connected">Not connected</string>
-    <string name="status_in_progress">Connection in progress</string>
-    <string name="status_error">Connection failed</string>
+    <string name="status_connected">Online</string>
+    <string name="status_not_connected">Offline</string>
+    <string name="status_in_progress">Registration in progress</string>
+    <string name="status_error">Registration failed</string>
     <string name="voicemail_unread"> unread messages</string>
 
     <!-- Side Menu -->
@@ -445,6 +446,9 @@
     <string name="pref_accept_early_media">Accept early-media</string>
     <string name="pref_grant_read_dnd_settings_permission_title">Do Not Disturb settings</string>
     <string name="pref_grant_read_dnd_settings_permission_desc">We need you to grant use the access to the Do Not Disturb settings to correctly ring or not depending on the current policy</string>
+    <string name="pref_grant_permission_desc">Telepele requires some permissions to work. Please grant permissions in the following pop-up windows.</string>
+    <string name="pref_grant_permission_title">Thanks for using Telepele</string>
+
 
     <!-- Chat settings -->
     <string name="pref_chat_title">Chat</string>

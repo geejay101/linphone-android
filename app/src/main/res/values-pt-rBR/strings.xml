@@ -146,8 +146,6 @@
   <string name="today">Hoje</string>
   <string name="yesterday">Ontem</string>
   <!--Contacts-->
-  <string name="no_contact">Nenhum contato em seus contatos.</string>
-  <string name="no_sip_contact">Nenhum contato SIP em seus contatos.</string>
   <string name="delete_contacts">Você deseja excluir contatos selecionados?</string>
   <string name="delete_contact">Deseja apagar o contato selecionado?</string>
   <string name="sip_address">Endereço SIP</string>

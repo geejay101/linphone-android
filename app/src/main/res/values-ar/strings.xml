@@ -141,8 +141,7 @@
   <string name="today">اليوم</string>
   <string name="yesterday">اﻷمس</string>
   <!--Contacts-->
-  <string name="no_contact">لا وجود لأي جهة اتصال في دفتر عناوينك.</string>
-  <string name="no_sip_contact">لا وجود لأي جهة اتصال SIP في دفتر عناوينك.</string>
+
   <string name="delete_contacts">أتود حذف جهات الاتصال المحددة ؟</string>
   <string name="delete_contact">أتود حذف جهة الاتصال المحددة ؟</string>
   <string name="sip_address">عنوان SIP</string>

@@ -141,8 +141,6 @@
   <string name="today">დღეს</string>
   <string name="yesterday">გუშინ</string>
   <!--Contacts-->
-  <string name="no_contact">თქვენს მისამართების წიგნში არ არის კონტაქტები</string>
-  <string name="no_sip_contact">თქვენს მისამართების წიგნში არ არის SIP კონტაქტები</string>
   <string name="delete_contacts">გსურთ არჩეული კონტაქტების წაშლა?</string>
   <string name="delete_contact">გსურთ არჩეული კონტაქტის წაშლა?</string>
   <string name="sip_address">SIP მისამართი</string>

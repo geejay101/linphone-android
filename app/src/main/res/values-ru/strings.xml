@@ -162,8 +162,6 @@
   <string name="yesterday">Вчера</string>
   <string name="calls">Вызовы</string>
   <!--Contacts-->
-  <string name="no_contact">В адресной книге нет контактов.</string>
-  <string name="no_sip_contact">В адресной книге нет SIP контактов.</string>
   <string name="delete_contacts">Вы действительно хотите удалить выбранные контакты?</string>
   <string name="delete_contact">Вы действительно хотите удалить выбранный контакт?</string>
   <string name="sip_address">Адрес SIP</string>

@@ -162,8 +162,7 @@
   <string name="yesterday">Вчора</string>
   <string name="calls">Виклики</string>
   <!--Contacts-->
-  <string name="no_contact">В адресній книзі немає контактів.</string>
-  <string name="no_sip_contact">В адресній книзі немає SIP контактів.</string>
+
   <string name="delete_contacts">Ви справді бажаєте вилучити обрані контакти?</string>
   <string name="delete_contact">Ви справді бажаєте вилучити обраний контакт?</string>
   <string name="sip_address">Адреса SIP</string>

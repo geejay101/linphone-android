@@ -518,7 +518,24 @@ public abstract class MainActivity extends LinphoneGenericActivity
             if (!locked) {
                 // This is to workaround an infinite loop of pause/start in Activity issue
                 // if incoming call ends while screen if off and locked
+
                 ActivityCompat.requestPermissions(this, permissions, resultCode);
+
+                /*              AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setTitle(getString(R.string.pref_grant_permission_title))
+                        .setMessage(getString(R.string.pref_grant_permission_desc))
+                        .setNegativeButton(
+                               "OK",
+                                new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        ActivityCompat.requestPermissions(
+                                                MainActivity.this, permissions, resultCode);
+                                        dialog.dismiss();
+                                    }
+                                })
+                        .show();
+                    */
             }
         }
     }
@@ -543,6 +560,7 @@ public abstract class MainActivity extends LinphoneGenericActivity
             if (permissions[i].equals(Manifest.permission.READ_CONTACTS)
                     || permissions[i].equals(Manifest.permission.WRITE_CONTACTS)) {
                 if (grantResults[i] == PackageManager.PERMISSION_GRANTED) {
+                    ContactsManager.getInstance().initializeContactManager();
                     ContactsManager.getInstance().enableContactsAccess();
                 }
             } else if (permissions[i].equals(Manifest.permission.READ_EXTERNAL_STORAGE)) {

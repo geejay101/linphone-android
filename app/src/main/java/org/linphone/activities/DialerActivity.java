@@ -141,7 +141,9 @@ public class DialerActivity extends MainActivity implements AddressText.AddressC
                     // Required starting Android 9 to be able to start a foreground service
                     "android.permission.FOREGROUND_SERVICE",
                     Manifest.permission.WRITE_CONTACTS,
-                    Manifest.permission.READ_CONTACTS
+                    Manifest.permission.READ_CONTACTS,
+                    Manifest.permission.RECORD_AUDIO,
+                    Manifest.permission.READ_PHONE_STATE
                 };
 
         handleIntentParams(getIntent());
@@ -275,6 +277,12 @@ public class DialerActivity extends MainActivity implements AddressText.AddressC
                     addressToCall = intent.getData().toString();
                     addressToCall = addressToCall.replace("%40", "@");
                     addressToCall = addressToCall.replace("%3A", ":");
+                    addressToCall = addressToCall.replace("%20", "");
+                    addressToCall = addressToCall.replace("%2B", "+");
+                    addressToCall = addressToCall.replace("%28", "");
+                    addressToCall = addressToCall.replace("%29", "");
+                    addressToCall = addressToCall.replace("%2D", "");
+
                     if (addressToCall.startsWith("sip:")) {
                         addressToCall = addressToCall.substring("sip:".length());
                     } else if (addressToCall.startsWith("tel:")) {

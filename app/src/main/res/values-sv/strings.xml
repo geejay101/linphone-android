@@ -162,8 +162,6 @@
   <string name="yesterday">Igår</string>
   <string name="calls">Samtal</string>
   <!--Contacts-->
-  <string name="no_contact">Inga kontakter i din adressbok.</string>
-  <string name="no_sip_contact">Inga SIP-kontakter i din adressbok.</string>
   <string name="delete_contacts">Vill du ta bort valda kontakter?</string>
   <string name="delete_contact">Vill du ta bort vald kontakt?</string>
   <string name="sip_address">SIP-adress</string>

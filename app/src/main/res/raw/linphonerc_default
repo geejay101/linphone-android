@@ -2,7 +2,8 @@
 contact="Linphone Android" <sip:linphone.android@unknown-host>
 use_info=0
 use_ipv6=1
-keepalive_period=30000
+keepalive_period=0
+# ping_with_options=1
 sip_port=-1
 sip_tcp_port=-1
 sip_tls_port=-1
@@ -15,6 +16,11 @@ size=vga
 tunnel=disabled
 push_notification=1
 auto_start=1
+# do not disturb pop up
+dnd_settings_popup_enabled=0
+# background mode:
+show_service_notification=1
+friendlist_subscription_enabled=0
 
 [tunnel]
 host=
@@ -24,8 +30,9 @@ port=443
 log_collection_upload_server_url=https://www.linphone.org:444/lft.php
 file_transfer_server_url=https://www.linphone.org:444/lft.php
 version_check_url_root=https://www.linphone.org/releases
-max_calls=10
+max_calls=1
 history_max_size=100
+
 
 [in-app-purchase]
 server_url=https://subscribe.linphone.org:444/inapp.php

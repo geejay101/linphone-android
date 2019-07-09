@@ -28,6 +28,7 @@ import android.view.View;
 import android.widget.Toast;
 import org.linphone.R;
 import org.linphone.activities.MainActivity;
+import org.linphone.core.tools.Log;
 
 public class ContactsActivity extends MainActivity {
     private boolean mEditOnClick;
@@ -200,10 +201,15 @@ public class ContactsActivity extends MainActivity {
     }
 
     private void showContactEdit(LinphoneContact contact, Bundle extras, boolean isChild) {
+        Log.i("[Contacts] showContactEdit executing");
+
         if (contact != null) {
             extras.putSerializable("Contact", contact);
         }
         if (mEditOnClick) {
+            Log.i("[Contacts] DisplayName: " + mEditDisplayName);
+            Log.i("[Contacts] SipUri: " + mEditSipUri);
+
             mEditOnClick = false;
             extras.putString("SipUri", mEditSipUri);
             extras.putString("DisplayName", mEditDisplayName);
