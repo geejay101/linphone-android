@@ -52,7 +52,6 @@
   <string name="app_description">O cliente SIP <i>livre</i></string>
   <!--Assistant-->
   <string name="welcome">Bem-vindo</string>
-  <string name="assistant">Assistente</string>
   <string name="assistant_create_account">Criar Conta</string>
   <string name="assistant_link_account">Conectar conta</string>
   <string name="assistant_continue">Continuar</string>

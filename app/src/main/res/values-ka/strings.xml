@@ -51,7 +51,6 @@
   <string name="app_description"><i>თავისუფალი</i> SIP კლიენტი</string>
   <!--Assistant-->
   <string name="welcome">კეთილი იყოს თქვენი მობრძანება</string>
-  <string name="assistant">ასისტენტი</string>
   <string name="assistant_create_account">ანგარიშის შექმნა</string>
   <string name="assistant_link_account">ანგარიშის მიბმა</string>
   <string name="assistant_continue">გაგრძელება</string>

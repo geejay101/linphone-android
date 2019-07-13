@@ -29,6 +29,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.Nullable;
+import java.util.Locale;
 import org.linphone.LinphoneManager;
 import org.linphone.R;
 import org.linphone.core.AccountCreator;
@@ -82,6 +83,8 @@ public class PhoneAccountLinkingAssistantActivity extends AssistantActivity {
                 mAccountCreator.setHa1(authInfo.getHa1());
 
                 mAccountCreator.setDomain(getString(R.string.default_domain));
+                mAccountCreator.setLanguage(Locale.getDefault().getLanguage());
+                Log.e("[Phone Account Creation] Language set " + Locale.getDefault().getLanguage());
             } else {
                 Log.e("[Account Linking] Proxy config index out of bounds: " + proxyConfigIndex);
                 unexpectedError();

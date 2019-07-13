@@ -9,7 +9,6 @@
   <string name="notification_registered">%s verbunden</string>
   <string name="tunnel_host"></string>
   <string name="about_version">Telepele %s</string>
-  <string name="about_link">telepele.eu</string>
   <string name="sync_account_name">Telepele-Kontakte</string>
   <string name="about_liblinphone_version">Linphone-Kern %s</string>
   <string name="about_liblinphone_sdk_version">Linphone SDK %s</string>
@@ -34,7 +33,7 @@
   <string name="accept">Annehmen</string>
   <string name="open">Öffnen</string>
   <string name="continue_text">Fortsetzen</string>
-  <string name="about">Über</string>
+  <string name="about">Info</string>
   <string name="deny">Verweigern</string>
   <string name="no_account">Kein Konto konfiguriert</string>
   <string name="search">Suchen</string>
@@ -59,12 +58,11 @@
   <string name="app_description">der <i>freie</i> SIP-Client</string>
   <!--Assistant-->
   <string name="welcome">Willkommen</string>
-  <string name="assistant">Assistent</string>
   <string name="assistant_create_account">Konto erstellen</string>
   <string name="assistant_link_account">Konto verknüpfen</string>
   <string name="assistant_continue">Fortsetzen</string>
   <string name="assistant_activate">Aktivieren Sie Ihr Konto</string>
-  <string name="assistant_finish">Konfiguration fertigstellen</string>
+  <string name="assistant_finish">Aktivieren</string>
   <string name="assistant_validate_account_1">Ihr Konto ist erstellt. Bitte überprüfen Sie Ihre E-Mails, um Ihr Konto zu bestätigen.</string>
   <string name="assistant_validate_account_2">Sobald das gemacht ist, kommen Sie wieder her und klicken auf die Schaltfläche.</string>
   <string name="assistant_welcome_desc">Dieser Assistent hilft Ihnen beim Konfigurieren und Nutzen Ihres SIP-Kontos.</string>
@@ -148,7 +146,7 @@
   <string name="inapp_notification_trial_expire">Der Testzeitraum läuft am %s ab.</string>
   <string name="inapp_notification_account_expire">Die Bezugszeit läuft am %s ab</string>
   <!--Dailer-->
-  <string name="address_bar_hint">Geben Sie eine Nummer oder eine Adresse ein</string>
+  <string name="address_bar_hint">Geben Sie eine Nummer ein</string>
   <!--History-->
   <string name="no_call_history">Kein Anruf in Ihrer Chronik</string>
   <string name="no_missed_call_history">Kein verpasster Anruf in Ihrer Chronik</string>

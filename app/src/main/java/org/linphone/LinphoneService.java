@@ -115,6 +115,9 @@ public final class LinphoneService extends Service {
         LinphonePreferences.instance().setContext(this);
         Factory.instance().setLogCollectionPath(getFilesDir().getAbsolutePath());
         boolean isDebugEnabled = LinphonePreferences.instance().isDebugEnabled();
+
+        //        boolean isDebugEnabled = true;
+
         LinphoneUtils.configureLoggingService(isDebugEnabled, getString(R.string.app_name));
         // LinphoneService isn't ready yet so we have to manually set up the Java logging service
         if (LinphonePreferences.instance().useJavaLogger()) {

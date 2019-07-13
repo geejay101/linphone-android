@@ -27,8 +27,10 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import androidx.annotation.Nullable;
+import java.util.Locale;
 import org.linphone.R;
 import org.linphone.core.TransportType;
+import org.linphone.core.tools.Log;
 
 public class GenericConnectionAssistantActivity extends AssistantActivity implements TextWatcher {
     private TextView mLogin;
@@ -68,6 +70,8 @@ public class GenericConnectionAssistantActivity extends AssistantActivity implem
     private void configureAccount() {
         mAccountCreator.setUsername(mUsername.getText().toString());
         mAccountCreator.setDomain(mDomain.getText().toString());
+        mAccountCreator.setLanguage(Locale.getDefault().getLanguage());
+        Log.e("[Phone Account Creation] Language set " + Locale.getDefault().getLanguage());
         mAccountCreator.setPassword(mPassword.getText().toString());
         mAccountCreator.setDisplayName(mDisplayName.getText().toString());
 

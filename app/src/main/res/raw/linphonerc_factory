@@ -23,8 +23,8 @@ keepalive_period=0
 [sound]
 #remove this property for any application that is not Linphone public version itself
 ec_calibrator_cool_tones=0
-mic_gain_db=8
-play_gain_db=8
+mic_gain_db=9
+play_gain_db=9
 
 [video]
 displaytype=MSAndroidTextureDisplay

@@ -30,6 +30,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.Nullable;
+import java.util.Locale;
 import org.linphone.R;
 import org.linphone.core.AccountCreator;
 import org.linphone.core.AccountCreatorListenerStub;
@@ -78,7 +79,10 @@ public class PhoneAccountCreationAssistantActivity extends AssistantActivity {
                             mAccountCreator.setUsername(mAccountCreator.getPhoneNumber());
                         }
                         mAccountCreator.setDomain(getString(R.string.default_domain));
-
+                        mAccountCreator.setLanguage(Locale.getDefault().getLanguage());
+                        Log.e(
+                                "[Phone Account Creation] Language set "
+                                        + Locale.getDefault().getLanguage());
                         AccountCreator.Status status = mAccountCreator.isAccountExist();
                         if (status != AccountCreator.Status.RequestOk) {
                             Log.e("[Phone Account Creation] isAccountExists returned " + status);

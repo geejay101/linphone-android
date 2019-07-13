@@ -49,7 +49,6 @@
   <string name="app_description"><i>自由な</i>クライアント</string>
   <!--Assistant-->
   <string name="welcome">ようこそ</string>
-  <string name="assistant">アシスタント</string>
   <string name="assistant_create_account">アカウントを作成する</string>
   <string name="assistant_link_account">アカウントをリンクする</string>
   <string name="assistant_continue">続行</string>

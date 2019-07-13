@@ -30,6 +30,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import androidx.annotation.Nullable;
+import java.util.Locale;
 import org.linphone.R;
 import org.linphone.core.AccountCreator;
 import org.linphone.core.AccountCreatorListenerStub;
@@ -165,7 +166,10 @@ public class EmailAccountCreationAssistantActivity extends AssistantActivity {
                     public void onClick(View v) {
                         enableButtonsAndFields(false);
                         mAccountCreator.setDomain(getString(R.string.default_domain));
-
+                        mAccountCreator.setLanguage(Locale.getDefault().getLanguage());
+                        Log.e(
+                                "[Phone Account Creation] Language set "
+                                        + Locale.getDefault().getLanguage());
                         AccountCreator.Status status = mAccountCreator.isAccountExist();
                         if (status != AccountCreator.Status.RequestOk) {
                             enableButtonsAndFields(true);

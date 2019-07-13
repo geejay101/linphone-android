@@ -40,7 +40,6 @@
   <!--Launch screen-->
   <!--Assistant-->
   <string name="welcome">Tervetuloa</string>
-  <string name="assistant">Avustaja</string>
   <string name="assistant_create_account">Luo tili</string>
   <string name="assistant_continue">Jatka</string>
   <string name="assistant_remote_provisioning_desc">Anna puhelun yhteyden luomistietojen url-osoite</string>

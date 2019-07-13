@@ -51,7 +51,6 @@
   <string name="app_description"><i>özgür</i> SIP istemcisi</string>
   <!--Assistant-->
   <string name="welcome">Hoş geldiniz</string>
-  <string name="assistant">Yardımcı</string>
   <string name="assistant_create_account">Hesap Oluştur</string>
   <string name="assistant_link_account">Hesap bağla</string>
   <string name="assistant_continue">Sürdür</string>

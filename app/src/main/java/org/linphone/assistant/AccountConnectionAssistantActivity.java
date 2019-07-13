@@ -31,6 +31,7 @@ import android.widget.RelativeLayout;
 import android.widget.Switch;
 import android.widget.TextView;
 import androidx.annotation.Nullable;
+import java.util.Locale;
 import org.linphone.R;
 import org.linphone.core.AccountCreator;
 import org.linphone.core.AccountCreatorListenerStub;
@@ -74,6 +75,10 @@ public class AccountConnectionAssistantActivity extends AssistantActivity {
                     @Override
                     public void onClick(View v) {
                         mAccountCreator.setDomain(getString(R.string.default_domain));
+                        mAccountCreator.setLanguage(Locale.getDefault().getLanguage());
+                        Log.e(
+                                "[Phone Account Creation] Language set "
+                                        + Locale.getDefault().getLanguage());
                         mConnect.setEnabled(false);
 
                         if (mUsernameConnectionSwitch.isChecked()) {

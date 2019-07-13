@@ -66,7 +66,6 @@
   <string name="app_description">це <i>безкоштовний</i> SIP-клієнт</string>
   <!--Assistant-->
   <string name="welcome">Ласкаво просимо</string>
-  <string name="assistant">Асистент</string>
   <string name="assistant_create_account">Створити обліківку</string>
   <string name="assistant_link_account">Пов\'язати обліківку</string>
   <string name="assistant_continue">Продовжити</string>

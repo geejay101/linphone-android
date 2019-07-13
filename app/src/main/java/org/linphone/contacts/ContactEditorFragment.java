@@ -520,19 +520,12 @@ public class ContactEditorFragment extends Fragment {
         }
 
         if (mNewSipOrNumberToAdd != null) {
-            boolean isSip =
-                    LinphoneUtils.isStrictSipAddress(mNewSipOrNumberToAdd)
-                            || !LinphoneUtils.isNumberAddress(mNewSipOrNumberToAdd);
-            if (!isSip) {
-                View view = displayNumberOrAddress(controls, mNewSipOrNumberToAdd, false);
-                if (view != null) controls.addView(view);
-            } else {
-                // make a phone number from the URI
-                String displayedNumber =
-                        LinphoneUtils.getDisplayablePhonenumberFromAddress(mNewSipOrNumberToAdd);
-                View view = displayNumberOrAddress(controls, displayedNumber, false);
-                if (view != null) controls.addView(view);
-            }
+
+            // make a phone number from the URI
+            String displayedNumber =
+                    LinphoneUtils.getDisplayablePhonenumberFromAddress(mNewSipOrNumberToAdd);
+            View view = displayNumberOrAddress(controls, displayedNumber, false);
+            if (view != null) controls.addView(view);
         }
 
         if (mNewDisplayName != null) {

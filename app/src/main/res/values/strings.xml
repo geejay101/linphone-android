@@ -11,10 +11,10 @@
     <string name="notification_register_failure">%s failed to connect</string>
     <string name="tunnel_host"></string>
     <string name="about_version">Telepele %s</string>
-    <string name="about_link">telepele.eu</string>
+    <string name="about_link">www.telepele.lv</string>
     <string name="about_liblinphone_version">Linphone Core %s</string>
     <string name="about_liblinphone_sdk_version">Linphone SDK %s</string>
-    <string name="about_privacy_policy">Visit our privacy policy</string>
+    <string name="about_privacy_policy">Privacy policy</string>
     <string name="sync_account_name">Telepele contacts</string>
 
     <!-- Notifications -->
@@ -43,7 +43,7 @@
     <string name="accept">Accept</string>
     <string name="open">Open</string>
     <string name="continue_text">Continue</string>
-    <string name="about">About</string>
+    <string name="about">Info</string>
     <string name="deny">Deny</string>
     <string name="no_account">No account configured</string>
     <string name="account_ready">Ready</string>

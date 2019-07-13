@@ -8,7 +8,6 @@
   <string name="wait_dialog_text">يجري التشغيل</string>
   <string name="tunnel_host"></string>
   <string name="about_version">Telepele %s</string>
-  <string name="about_link">telepele.eu</string>
   <string name="about_liblinphone_version">Linphone Core %s</string>
   <string name="sync_account_name">Telepele لِنْفُونْ</string>
   <!--Notifications-->
@@ -50,7 +49,6 @@
   <string name="app_description">‫الزبون SIP <i>الحر</i>‬</string>
   <!--Assistant-->
   <string name="welcome">مرحبا</string>
-  <string name="assistant">المرشد</string>
   <string name="assistant_create_account">إنشاء الحساب</string>
   <string name="assistant_link_account">ربط الحساب</string>
   <string name="assistant_continue">استمرار</string>

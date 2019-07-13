@@ -22,27 +22,6 @@
                 android:layout_gravity="center"
                 android:src="@drawable/splashscreen" />
 
-            <TextView
-                android:id="@+id/about_android_version"
-                style="@style/about_version_font"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:paddingTop="20dp"
-                android:text="@string/about_version"
-                android:textColorLink="?attr/secondaryTextColor" />
-
-            <TextView
-                android:id="@+id/about_liblinphone_sdk_version"
-                style="@style/about_version_font"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="@string/about_liblinphone_sdk_version"
-                android:textColorLink="?attr/secondaryTextColor" />
-
         </LinearLayout>
 
         <LinearLayout
@@ -66,18 +45,6 @@
                 android:textColorLink="@color/primary_color" />
 
             <TextView
-                android:id="@+id/privacy_policy_link"
-                style="@style/about_license_font"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:autoLink="web"
-                android:paddingTop="10dp"
-                android:gravity="center"
-                android:text="@string/about_privacy_policy"
-                android:textColorLink="@color/primary_color" />
-
-            <TextView
                 android:id="@+id/about_text"
                 style="@style/about_license_font"
                 android:layout_width="wrap_content"
@@ -87,6 +54,18 @@
                 android:paddingTop="10dp"
                 android:paddingBottom="20dp"
                 android:text="@string/about_text" />
+
+            <TextView
+                android:id="@+id/privacy_policy_link"
+                style="@style/about_license_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:autoLink="web"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="@string/about_privacy_policy"
+                android:textColorLink="@color/primary_color" />
 
             <View
                 android:layout_width="match_parent"

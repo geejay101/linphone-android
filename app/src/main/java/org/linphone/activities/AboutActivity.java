@@ -33,7 +33,6 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.core.content.ContextCompat;
-import org.linphone.BuildConfig;
 import org.linphone.LinphoneManager;
 import org.linphone.R;
 import org.linphone.core.Core;
@@ -67,21 +66,6 @@ public class AboutActivity extends MainActivity {
             findViewById(R.id.fragmentContainer2).setVisibility(View.GONE);
         }
 
-        TextView aboutVersion = findViewById(R.id.about_android_version);
-        TextView aboutLiblinphoneVersion = findViewById(R.id.about_liblinphone_sdk_version);
-        aboutLiblinphoneVersion.setText(
-                String.format(
-                        getString(R.string.about_liblinphone_sdk_version),
-                        getString(R.string.linphone_sdk_version)
-                                + " ("
-                                + getString(R.string.linphone_sdk_branch)
-                                + ")"));
-        // We can't access a library's BuildConfig, so we have to set it as a resource
-        aboutVersion.setText(
-                String.format(
-                        getString(R.string.about_version),
-                        BuildConfig.VERSION_NAME + " (" + BuildConfig.BUILD_TYPE + ")"));
-
         TextView privacyPolicy = findViewById(R.id.privacy_policy_link);
         privacyPolicy.setOnClickListener(
                 new View.OnClickListener() {
@@ -96,17 +80,6 @@ public class AboutActivity extends MainActivity {
                 });
 
         TextView license = findViewById(R.id.about_text);
-        license.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent browserIntent =
-                                new Intent(
-                                        Intent.ACTION_VIEW,
-                                        Uri.parse(getString(R.string.about_license_link)));
-                        startActivity(browserIntent);
-                    }
-                });
 
         Button sendLogs = findViewById(R.id.send_log);
         sendLogs.setOnClickListener(
